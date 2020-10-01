@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Dbm_CmsLayouts::cmslayouts" title="Homepage Layouts" module="Dbm_CmsLayouts" sortOrder="100" resource="Dbm_CmsLayouts::cmslayouts" parent="Magento_Backend::content"/>
+        <add id="Dbm_CmsLayouts::cms" title="Homepage Block" module="Dbm_CmsLayouts" sortOrder="20" parent="Dbm_CmsLayouts::cmslayouts" action="cmslayouts/cms/index" resource="Dbm_CmsLayouts::cms"/>
+        <add id="Dbm_CmsLayouts::layouts" title="Homepage Layouts" module="Dbm_CmsLayouts" sortOrder="30" parent="Dbm_CmsLayouts::cmslayouts" action="cmslayouts/layouts/index" resource="Dbm_CmsLayouts::layouts"/>
+        <add id="Dbm_CmsLayouts::configuration" title="Configuration" module="Dbm_CmsLayouts" sortOrder="70" parent="Dbm_CmsLayouts::cmslayouts" action="adminhtml/system_config/edit/section/cmslayouts" resource="Dbm_CmsLayouts::configuration"/>
+    </menu>
+</config>

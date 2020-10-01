@@ -1,0 +1,21 @@
+<?php
+
+
+/** @var $block \Dbm\CmsLayouts\Block\Adminhtml\Cms\Edit\Form */
+?>
+<div class="entry-edit form-inline" id="dbm-cmslayouts">
+    <?= $block->getFormHtml(); ?>
+</div>
+<?= $block->getChildHtml('form_after'); ?>
+
+<script type="text/x-magento-init">
+    {
+        "#dbm-cmslayouts": {
+            "Dbm_CmsLayouts/js/view/cmslayouts":{
+                "templateHtml": "<?= $block->escapeJs($block->getTemplateHtml()); ?>",
+                "imgUrls": "<?= $block->escapeJs($block->getImageUrls()); ?>"
+            }
+        }
+    }
+
+</script>

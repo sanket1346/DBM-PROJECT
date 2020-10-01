@@ -1,0 +1,119 @@
+
+
+.cms-index-index main#maincontent {    max-width: 100%;    padding: 0;}
+
+.block_type_4 {    display: inline-block;    width: 100%;    padding-top: 20px;
+    padding-bottom: 20px;}
+.block_type_4 .sub-cat-ul-main {  max-width: 1200px;    margin: 0 auto;}
+.block_type_4 .sub-cat-ul .cat-li {    width: calc(25% - 50px);   margin-left: 25px; list-style-type: none;
+    margin-bottom: 0;    float: left;    text-align: center;    margin-right: 25px;}
+.block_type_4 .sub-cat-ul .cat-li h4 {    text-transform: uppercase;    font-size: 16px;color: #fff;}
+
+.block_type_1  {    display: inline-block;    width: 100%;    position: relative;}
+.block_type_1 img  {    width: 100%;}
+.block_type_1 .contain { position: absolute;  top: 10%; text-align: center; width: 100%; max-width: 1200px;    margin: 0 auto;    left: 0;    right: 0;}
+.block_type_1 .contain h1 {font-size: 60px;margin-bottom: 0; color: #002f67; font-family: 'Dubai Regular'; font-weight: 300;}
+.block_type_1 .contain h3 {    font-size: 52px;    margin-top: 2rem;    margin-bottom: 1rem;
+    color: #002f67;    line-height: 1.1;    font-family: 'Dubai Regular';   font-weight: bold !important;}
+.block_type_1 .contain span {font-size: 26px; padding: 20px 50px;   text-transform: uppercase;   text-decoration: none;  border-radius: 5px;    margin-top: 25px;  font-family: 'Dubai Regular';  display: inline-block;}
+.brand_logo {position: absolute; bottom: 4%; background: #fff;width: 100%;}
+.brand_logo ul.sub-cat-ul {  margin: 0;  text-align: center;}
+.brand_logo ul.sub-cat-ul li.cat-li {  margin-top: 1rem;  display: inline-block;}
+.brand_logo ul.sub-cat-ul li.cat-li a {    display: inline-block;}
+
+
+.block_type_2 { display: inline-block; width: 100%; padding: 60px 0;}
+.block_type_2 .contain_part { max-width: 1080px; margin: 0 auto;}
+.block_type_2 .contain_part h1{  margin-bottom: 20px; color: #000;  text-align: center;    font-size: 40px;}
+.block_type_2 .contain_part p {    text-align: center;    font-size: 14px;    color: #002f67;}
+.block_type_2 .contain_part .left, .block_type_2 .contain_part .right {width: 46%;margin-top: 20px;}
+.block_type_2 .contain_part .right {    padding: 60px 40px;text-align: center;}
+.block_type_2 .contain_part .right h3 {    font-size: 20px;    font-weight: normal;}
+.block_type_2 .contain_part .right p {    color: #000;}
+.block_type_2 .contain_part .right p.color_p {    color: #ffab40;}
+.block_type_2 .contain_part .right span {width: 100%; text-align: center; color: #002f67; font-size: 14px;    float: left;}
+.block_type_2 .contain_part .right a {clear: both; margin-top: 20px; font-size: 20px;
+    padding: 15px 15px;text-transform: uppercase;border-radius: 5px;line-height: 15px;display: inline-block;}
+
+
+.block_type_5 h1 {    text-align: center;    text-transform: uppercase;    font-size: 34px;    color: #002f67;
+    font-weight: bold;    font-family: 'Dubai Regular';    margin-bottom: 0;}
+.block_type_5 { display: inline-block;    width: 100%;    margin: 0 0; padding: 25px 20px;}
+.block_type_5 ul.owl-carousel { margin-top: 25px !important;  padding: 0; }
+.block_type_5 ul.owl-carousel li {    list-style-type: none;}
+.block_type_5 ul.owl-carousel li a {    text-decoration: none;}
+.block_type_5 .old-price .price {    text-decoration: line-through;}
+.block_type_5 span.old-price {    float: left;    margin-right: 10px;}
+.block_type_5 span.old-price span.price-label {    display: none;}
+.block_type_5 ul.owl-carousel .contain .price {    font-size: 18px;    color: #aaa;}
+.block_type_5 ul.owl-carousel .contain span.product_name {font-size: 18px; color: #000;}
+.block_type_5 .owl-nav {    position: absolute;    top: 35%;    width: 100%;}
+.block_type_5 .owl-carousel .owl-nav button.owl-prev {    font-size: 50px;  position: absolute; left: -35px;}
+.block_type_5 .owl-carousel .owl-nav button.owl-next { font-size: 50px;  z-index: 9; position: absolute;right: 0;}
+.block_type_5 ul.owl-carousel li .contain {    margin-top: 10px;}
+
+.block_type_5 .owl-dots {text-align: center;}
+
+
+.block_type_6 h1 {    text-align: center;    text-transform: uppercase;    font-size: 34px;    color: #002f67;
+    font-weight: bold;    font-family: 'Dubai Regular';    margin-bottom: 0;}
+.block_type_6 { display: inline-block;    width: 100%;    margin: 0 0; padding: 25px 20px;}
+.block_type_6 ul.owl-carousel { margin-top: 25px !important;  padding: 0; }
+.block_type_6 ul.owl-carousel li {    list-style-type: none;}
+.block_type_6 ul.owl-carousel li a {    text-decoration: none;}
+.block_type_6 .old-price .price {    text-decoration: line-through;}
+.block_type_6 span.old-price {    float: left;    margin-right: 10px;}
+.block_type_6 span.old-price span.price-label {    display: none;}
+.block_type_6 ul.owl-carousel .contain .price {    font-size: 18px;    color: #aaa;}
+.block_type_6 ul.owl-carousel .contain span.product_name {font-size: 18px; color: #000;}
+.block_type_6 .owl-nav {    position: absolute;    top: 35%;    width: 100%;}
+.block_type_6 .owl-carousel .owl-nav button.owl-prev {    font-size: 50px;  position: absolute; left: -35px;}
+.block_type_6 .owl-carousel .owl-nav button.owl-next { font-size: 50px;  z-index: 9; position: absolute;right: 0;}
+.block_type_6 ul.owl-carousel li .contain {    margin-top: 10px;}
+
+.block_type_6 .owl-dots {text-align: center;}
+
+@media only screen and (max-width: 1200px) {
+.block_type_1 .contain {    right: 20px !important;    left: unset;}
+}
+
+@media only screen and (max-width: 1180px) {
+.block_type_1 .contain h1 {    font-size: 45px;}
+.block_type_1 .contain h3 {    font-size: 45px;margin: 0;}
+.block_type_1 .contain span {    font-size: 26px;    padding: 10px 15px;  margin-top: 15px;}
+}
+
+@media only screen and (max-width: 1024px) {
+.block_type_2 .contain_part {    padding: 20px;}
+.block_type_2 .contain_part .left, .block_type_2 .contain_part .right { width: 44%;}
+}
+
+@media only screen and (max-width: 900px) {
+.block_type_1 .contain {    top: 15px;}
+}
+
+@media only screen and (max-width: 770px) {
+.block_type_4 .sub-cat-ul .cat-li h4 {    font-size: 14px;}
+.block_type_1 .contain h1 {    font-size: 32px;}
+.block_type_1 .contain h3 {    font-size: 28px;margin: 0;}
+.block_type_1 .contain span {    font-size: 18px;}
+.brand_logo {    position: initial;}
+.block_type_2 {    padding: 20px 0;}
+.block_type_2 .contain_part .left, .block_type_2 .contain_part .right {
+    width: 100%;text-align: center;}
+.block_type_2 .contain_part .right {  padding: 60px 0;}
+}
+
+
+@media only screen and (max-width: 480px) {
+span.slide-container.slide-skin.text-center { top: 30%;}
+.block_type_4 .sub-cat-ul .cat-li {    width: calc(50% - 50px);}
+.brand_logo ul.sub-cat-ul {  padding: 0;}
+.block_type_1 .contain h1 {    font-size: 20px;}
+.block_type_1 .contain h3 {    font-size: 18px;margin: 0;}
+.block_type_1 .contain span {    font-size: 14px;}
+}
+
+@media only screen and (max-width: 375px) {
+.block_type_1 .contain span {    padding: 5px 15px;    margin-top: 6px;}
+}

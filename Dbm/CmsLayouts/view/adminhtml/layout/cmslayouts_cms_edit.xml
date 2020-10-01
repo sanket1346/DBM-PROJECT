@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <update handle="editor"/>
+    <head>
+        <script src="Dbm_CmsLayouts::js/jscolor.js"/>
+        <css src="Dbm_CmsLayouts::css/admin.css"/>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block class="Dbm\CmsLayouts\Block\Adminhtml\Cms\Edit" name="dbm_cmslayouts_cms_edit"/>
+        </referenceContainer>
+        <referenceContainer name="left">
+            <block class="Dbm\CmsLayouts\Block\Adminhtml\Cms\Edit\Tabs" name="dbm_cmslayouts_cms_tabs">
+                <block class="Dbm\CmsLayouts\Block\Adminhtml\Cms\Edit\Tab\Cms" name="dbm_cmslayouts_cms_edit_tab_cms"/>
+                <action method="addTab">
+                    <argument name="name" xsi:type="string">cms</argument>
+                    <argument name="block" xsi:type="string">dbm_cmslayouts_cms_edit_tab_cms</argument>
+                </action>
+            </block>
+        </referenceContainer>
+    </body>
+</page>

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+    <widget class="Dbm\CmsLayouts\Block\Widget" id="dbm_cmslayouts_widget">
+        <label translate="true">Dbm  Layouts</label>
+        <description translate="true">Layouts list</description>
+        <parameters>
+            <parameter name="layouts_id" xsi:type="select" required="true" visible="true" source_model="Dbm\CmsLayouts\Model\Config\Source\Layoutss">
+                <label translate="true">Select Layouts</label>
+            </parameter>
+        </parameters>
+    </widget>
+</widgets>

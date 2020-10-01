@@ -1,0 +1,138 @@
+Cmss,Cmss
+"Create New Cms","Create New Cms"
+"Save Cms","Save Cms"
+"Save and Continue Edit","Save and Continue Edit"
+"Delete Cms","Delete Cms"
+"Edit Cms '%1'","Edit Cms '%1'"
+"New Cms","New Cms"
+"Cms Information","Cms Information"
+Name,Name
+Status,Status
+Type,Type
+"Upload Image","Upload Image"
+"Cms title","Cms title"
+Url,Url
+"Open new tab after click","Open new tab after click"
+"Automatically open new tab after clicking on the Cms","Automatically open new tab after clicking on the Cms"
+"Demo template","Demo template"
+"Load Template","Load Template"
+Layoutss,Layoutss
+General,General
+"Screen size from","Screen size from"
+"Number of items","Number of items"
+Add,Add
+"Create New Layouts","Create New Layouts"
+"Save Layouts","Save Layouts"
+"Delete Layouts","Delete Layouts"
+"Edit Layouts '%1'","Edit Layouts '%1'"
+"New Layouts","New Layouts"
+ID,ID
+Image,Image
+Position,Position
+Design,Design
+"Animation Effect","Animation Effect"
+"Manually Design","Manually Design"
+"Use Config","Use Config"
+Yes,Yes
+"Is Responsive","Is Responsive"
+"Max Items Layouts","Max Items Layouts"
+"Auto Width","Auto Width"
+"Auto Height","Auto Height"
+"Infinity Loop","Infinity Loop"
+"Show Next/Prev Buttons","Show Next/Prev Buttons"
+"Show Dots Navigation","Show Dots Navigation"
+"Lazy Loading Images","Lazy Loading Images"
+Autoplay,Autoplay
+"Autoplay Time-Out","Autoplay Time-Out"
+"Add Widget with name ""Cms Layouts widget"" and set ""Layouts Id"" for it.","Add Widget with name ""Cms Layouts widget"" and set ""Layouts Id"" for it."
+"CMS Page/Static Block","CMS Page/Static Block"
+"You can paste the above block of snippet into any page in Magento 2 and set LayoutsId for it.","You can paste the above block of snippet into any page in Magento 2 and set LayoutsId for it."
+"Template .phtml file","Template .phtml file"
+"Open a .phtml file and insert where you want to display Cms Layouts.","Open a .phtml file and insert where you want to display Cms Layouts."
+"Layouts Information","Layouts Information"
+"Store Views","Store Views"
+"Customer Groups","Customer Groups"
+"Select customer group(s) to display the Layouts to","Select customer group(s) to display the Layouts to"
+"Select the position to display block.","Select the position to display block."
+"Display from","Display from"
+"Display to","Display to"
+Priority,Priority
+"Enter a number to set priority for the Layouts. A lower number represents a higher priority.","Enter a number to set priority for the Layouts. A lower number represents a higher priority."
+"Another way to add Layoutss to your page","Another way to add Layoutss to your page"
+"How to use","How to use"
+"The Cms has been deleted.","The Cms has been deleted."
+"This Cms no longer exists.","This Cms no longer exists."
+"Manage Cms","Manage Cms"
+"Please correct the data sent.","Please correct the data sent."
+"Something went wrong while saving the Cms.","Something went wrong while saving the Cms."
+"A total of %1 record(s) have been deleted.","A total of %1 record(s) have been deleted."
+"Something went wrong while updating status for %1.","Something went wrong while updating status for %1."
+"A total of %1 record(s) have been updated.","A total of %1 record(s) have been updated."
+"The Cms has been saved.","The Cms has been saved."
+"The Layouts has been deleted.","The Layouts has been deleted."
+"This Layouts no longer exists.","This Layouts no longer exists."
+"Manage Layouts","Manage Layouts"
+"The Layouts has been saved.","The Layouts has been saved."
+"Something went wrong while saving the Layouts.","Something went wrong while saving the Layouts."
+No,No
+fadeOut,fadeOut
+rotateOut,rotateOut
+flipOut,flipOut
+rollOut,rollOut
+zoomOut,zoomOut
+slideOutLeft,slideOutLeft
+slideOutRight,slideOutRight
+lightSpeedOut,lightSpeedOut
+"All Page","All Page"
+"Top of content","Top of content"
+"Bottom of content","Bottom of content"
+"Top of page","Top of page"
+"Bottom of page","Bottom of page"
+"Home Page","Home Page"
+"Category page","Category page"
+"Top of sidebar","Top of sidebar"
+"Bottom of sidebar","Bottom of sidebar"
+"Product page","Product page"
+"Demo template 1","Demo template 1"
+"Demo template 2","Demo template 2"
+"Demo template 3","Demo template 3"
+"Demo template 4","Demo template 4"
+"Demo template 5","Demo template 5"
+Advanced,Advanced
+Edit,Edit
+"No Cms added","No Cms added"
+"Category Page","Category Page"
+"Product Page","Product Page"
+"All Store Views","All Store Views"
+"Cms Layouts","Cms Layouts"
+Enable,Enable
+"Select Yes to enable this module","Select Yes to enable this module"
+"Layouts Design Configuration","Layouts Design Configuration"
+Responsive,Responsive
+"Select Yes to use auto-width","Select Yes to use auto-width"
+"Select Yes to use auto-height","Select Yes to use auto-height"
+"Select Yes to re-display the Layouts after it shows the last item","Select Yes to re-display the Layouts after it shows the last item"
+"Select Yes to display the Next/Pre buttons in the Layouts","Select Yes to display the Next/Pre buttons in the Layouts"
+"Select Yes to display dots navigation of the Layouts","Select Yes to display dots navigation of the Layouts"
+"Select Yes to lazy loading images","Select Yes to lazy loading images"
+"Select Yes to allow auto-displaying the next products","Select Yes to allow auto-displaying the next products"
+"The time (ms) in which an item is auto-moved to the left","The time (ms) in which an item is auto-moved to the left"
+"Mageplaza Cms Layouts","Mageplaza Cms Layouts"
+"Cms Layouts list","Cms Layouts list"
+"Select Layouts","Select Layouts"
+"Add New Cms","Add New Cms"
+Delete,Delete
+"Are you sure you wan't to delete selected Cmss?","Are you sure you wan't to delete selected Cmss?"
+"Change status","Change status"
+Disable,Disable
+Cms,Cms
+Created,Created
+Modified,Modified
+"Add New Layouts","Add New Layouts"
+"Delete Layoutss","Delete Layoutss"
+"Are you sure you wan't to delete selected Layoutss?","Are you sure you wan't to delete selected Layoutss?"
+"Number of Cms","Number of Cms"
+"Layouts Location","Layouts Location"
+"Store View","Store View"
+"Start Date","Start Date"
+"End Date","End Date"

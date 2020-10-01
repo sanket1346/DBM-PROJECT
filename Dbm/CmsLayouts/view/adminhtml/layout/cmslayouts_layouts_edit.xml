@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="admin-2columns-left" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block class="Dbm\CmsLayouts\Block\Adminhtml\Layouts\Edit" name="dbm_cmslayouts_layouts_edit"/>
+        </referenceContainer>
+        <referenceContainer name="left">
+            <block class="Dbm\CmsLayouts\Block\Adminhtml\Layouts\Edit\Tabs" name="dbm_cmslayouts_layouts_tabs">
+                <block class="Dbm\CmsLayouts\Block\Adminhtml\Layouts\Edit\Tab\Layouts" name="dbm_cmslayouts_layouts_edit_tab_layouts"/>
+                <block class="Dbm\CmsLayouts\Block\Adminhtml\Layouts\Edit\Tab\Cms" name="dbm_cmslayouts_layouts_edit_tab_cms"/>
+                <!--<block class="Dbm\CmsLayouts\Block\Adminhtml\Layouts\Edit\Tab\Design" name="dbm_cmslayouts_layouts_edit_tab_design"/> -->
+                <action method="addTab">
+                    <argument name="name" xsi:type="string">layouts</argument>
+                    <argument name="block" xsi:type="string">dbm_cmslayouts_layouts_edit_tab_layouts</argument>
+                </action>
+                <action method="addTab">
+                    <argument name="name" xsi:type="string">cms</argument>
+                    <argument name="block" xsi:type="string">dbm_cmslayouts_layouts_edit_tab_cms</argument>
+                </action>
+                <!--<action method="addTab">
+                    <argument name="name" xsi:type="string">design</argument>
+                    <argument name="block" xsi:type="string">dbm_cmslayouts_layouts_edit_tab_design</argument>
+                </action> -->
+            </block>
+        </referenceContainer>
+    </body>
+</page>

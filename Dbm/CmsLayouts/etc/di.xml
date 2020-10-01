@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="cmslayouts_cms_listing_data_source" xsi:type="string">Dbm\CmsLayouts\Model\ResourceModel\Cms\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
+        <arguments>
+            <argument name="collections" xsi:type="array">
+                <item name="cmslayouts_layouts_listing_data_source" xsi:type="string">Dbm\CmsLayouts\Model\ResourceModel\Layouts\Grid\Collection</item>
+            </argument>
+        </arguments>
+    </type>
+    <virtualType name="Dbm\CmsLayouts\Model\ResourceModel\Cms\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">dbm_cmslayouts_cms</argument>
+            <argument name="resourceModel" xsi:type="string">Dbm\CmsLayouts\Model\ResourceModel\Cms</argument>
+        </arguments>
+    </virtualType>
+    <virtualType name="Dbm\CmsLayouts\Model\ResourceModel\Layouts\Grid\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
+        <arguments>
+            <argument name="mainTable" xsi:type="string">dbm_cmslayouts_layouts</argument>
+            <argument name="resourceModel" xsi:type="string">Dbm\CmsLayouts\Model\ResourceModel\Layouts</argument>
+        </arguments>
+    </virtualType>
+
+    <type name="Dbm\CmsLayouts\Block\Layouts"> <!-- change name here to match your block class name -->
+        <arguments>
+            <argument name="templateProcessor" xsi:type="object">Magento\Widget\Model\Template\Filter</argument>
+        </arguments>
+    </type>
+
+</config>

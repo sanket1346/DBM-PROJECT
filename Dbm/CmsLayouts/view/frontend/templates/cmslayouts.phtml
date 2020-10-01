@@ -1,0 +1,304 @@
+<?php
+use Dbm\CmsLayouts\Model\Config\Source\Type;
+
+$cmss = $block->getCmsCollection();
+
+//echo count($cmss); exit;
+ //echo "<pre>";
+ //print_r($cmss->getData());
+// exit;
+
+if (count($cmss) > 0) { ?>
+
+    <div id="homepage-layouts" class="homepage_design">
+
+		<?php foreach ($cmss as $cms) : ?>
+
+			<?php $cmslayoutvalue = $cms->getCmsSerializeData();
+
+				$cmslayoutvalue = $block->getFieldUnserializer($cms->getCmsSerializeData());
+
+				//echo "<pre>";
+				//print_r($cmslayoutvalue);
+
+			?>
+			<?php
+	            $bnName  = $cms->getName();
+	        ?>
+
+	        <?php if($cmslayoutvalue['type'] =="1"){ ?>
+
+				<div class="block_type_<?php echo $cmslayoutvalue['type'];?> home_page_third_block home_page_four_block" style="background-color:<?php echo $cmslayoutvalue['type1_block_back_color']?>;">
+
+				<?php $banner = $this->getUrl('pub/media').'dbm/cmslayouts/cms/image/'.$cmslayoutvalue['image']; ?>
+					<a href="<?php echo $cmslayoutvalue['type1_url']; ?>">
+						<img class="image" src="<?php echo $banner; ?>">
+						<div class="contain">
+							<div class="contain_part" style="width:auto; float:<?php echo $cmslayoutvalue['type1_content_position']; ?>">
+								<h1><?php echo $cmslayoutvalue['type1_title']; ?></h1>
+								<h3><b><?php echo $cmslayoutvalue['type1_small_title']; ?></b></h3>
+								<span style="background:<?php echo $cmslayoutvalue['type1_button_back_color'];?>; color:<?php echo $cmslayoutvalue['type1_button_text_color']; ?>">
+									<?php echo $cmslayoutvalue['type1_button_text']; ?>
+								</span>
+							</div>							
+						</div>
+						<?php 
+							$content = $cmslayoutvalue['type1_content']; 
+							echo $block->filterOutputHtml($content);
+						?>
+					</a>
+				</div>
+			<?php } ?>
+
+			<?php if($cmslayoutvalue['type'] =="2"){ ?>
+			<?php $banner = $this->getUrl('pub/media').'dbm/cmslayouts/cms/image/'.$cmslayoutvalue['type2_image1']; ?>
+			<div class="block_type_<?php echo $cmslayoutvalue['type'];?> home_page_five_block" style="background-color:<?php echo $cmslayoutvalue['type2_main_back_color']?>;">
+				<div class="contain_part">
+					<h1><?php echo $cmslayoutvalue['type2_title1']; ?></h1>
+					<p><?php echo $cmslayoutvalue['type2_small_title1']; ?></p>
+					<div class="left" style="float:<?php echo $cmslayoutvalue['type2_content_position1']?>;background-color:<?php echo $cmslayoutvalue['type2_block_back_color1']?>;">
+						<a href="<?php echo $cmslayoutvalue['type2_url1']; ?>">
+							<img class="image" src="<?php echo $banner; ?>">
+						</a>
+					</div>
+					<div class="right" style="float:<?php echo $cmslayoutvalue['type2_content_position2']?>; background-color:<?php echo $cmslayoutvalue['type2_block_back_color2']?>;">
+						<h3><?php echo $cmslayoutvalue['type2_title2']; ?></h3>
+						<p><?php echo $cmslayoutvalue['type2_small_title2']; ?></p>
+						<?php 
+							$content = $cmslayoutvalue['type2_content2']; 
+							echo $block->filterOutputHtml($content);
+						?>
+
+						<a href="<?php echo $cmslayoutvalue['type2_url2']; ?>" style="background:<?php echo $cmslayoutvalue['type2_button_back_color2'];?>; color:<?php echo $cmslayoutvalue['type2_button_text_color2']; ?>"><?php echo $cmslayoutvalue['type2_button_text2']; ?></a>
+					</div>
+				</div>
+			</div>
+			<?php } ?>
+
+
+
+			<?php if($cmslayoutvalue['type'] =="4"){
+
+				$banner = $this->getUrl('pub/media').'dbm/cmslayouts/cms/image/'.$cmslayoutvalue['type4_image1'];
+				$banner1 = $this->getUrl('pub/media').'dbm/cmslayouts/cms/image/'.$cmslayoutvalue['type4_image2'];
+				$banner2 = $this->getUrl('pub/media').'dbm/cmslayouts/cms/image/'.$cmslayoutvalue['type4_image3'];
+				$banner3 = $this->getUrl('pub/media').'dbm/cmslayouts/cms/image/'.$cmslayoutvalue['type4_image4'];
+
+			?>
+			<div class="block_type_<?php echo $cmslayoutvalue['type'];?> home_page_first_block" style="background-color:<?php echo $cmslayoutvalue['type4_main_back_color']?>;">
+				<div class="sub-cat-ul-main">
+				   <ul class="sub-cat-ul">
+				      <li class="cat-li" style="background-color:<?php echo $cmslayoutvalue['type4_block_back_color1']?>;">
+				         <a href="<?php echo $cmslayoutvalue['type4_url1']?>">
+				            <h4><?php echo $cmslayoutvalue['type4_title1']; ?></h4>
+				            <img class="image" src="<?php echo $banner; ?>">
+				            <?php 
+								$content = $cmslayoutvalue['type4_content1']; 
+								echo $block->filterOutputHtml($content);
+							?>
+				         </a>
+				      </li>
+				      <li class="cat-li" style="background-color:<?php echo $cmslayoutvalue['type4_block_back_color2']?>;">
+				         <a href="<?php echo $cmslayoutvalue['type4_url2']?>">
+				            <h4><?php echo $cmslayoutvalue['type4_title2']; ?></h4>
+				           <img class="image" src="<?php echo $banner1; ?>">
+				           <?php 
+								$content = $cmslayoutvalue['type4_content2']; 
+								echo $block->filterOutputHtml($content);
+							?>
+				         </a>
+				      </li>
+				      <li class="cat-li" style="background-color:<?php echo $cmslayoutvalue['type4_block_back_color3']?>;">
+				         <a href="<?php echo $cmslayoutvalue['type4_url3']?>">
+				            <h4><?php echo $cmslayoutvalue['type4_title3']; ?></h4>
+				            <img class="image" src="<?php echo $banner2; ?>">
+				            <?php 
+								$content = $cmslayoutvalue['type4_content3']; 
+								echo $block->filterOutputHtml($content);
+							?>
+				         </a>
+				      </li>
+				      <li class="cat-li" style="background-color:<?php echo $cmslayoutvalue['type4_block_back_color4']?>;">
+				         <a href="<?php echo $cmslayoutvalue['type4_url4']?>">
+				            <h4><?php echo $cmslayoutvalue['type4_title4']; ?></h4>
+				            <img class="image" src="<?php echo $banner3; ?>">
+				            <?php 
+								$content = $cmslayoutvalue['type4_content4']; 
+								echo $block->filterOutputHtml($content);
+							?>
+				         </a>
+				      </li>
+				   </ul>
+				</div>
+				</div>
+				<?php } ?>
+
+
+		<?php if($cmslayoutvalue['type'] =="5"){ ?>	
+		<?php /* Category Product Slider */ ?>
+
+		<?php
+		$helper = $this->helper("Dbm\CmsLayouts\Helper\Data");
+		$abstractProductBlock = $block->getLayout()->createBlock('\Magento\Catalog\Block\Product\AbstractProduct');
+		$placeholderimg = $helper->getPlaceholderImage();
+		$cid =$cmslayoutvalue['type5_category1'];
+		$limit =$cmslayoutvalue['type5_limit1'];
+		$categoryProducts = $helper->getProductCollectionFromCategory($cid)->setPageSize($limit);
+		$imageId = 'product_base_image';
+		$width = 290;
+		$height = 357;
+		?>
+		<div class="block_type_<?php echo $cmslayoutvalue['type'];?> product_slider" style="background-color:<?php echo $cmslayoutvalue['type5_button_back_color1']?>;">
+			<h1><?php echo $cmslayoutvalue['type5_title1']; ?></h1>
+			<ul class="owl-carousel owl-theme owl-loaded owl-drag cat-pro-slider"> 
+			<?php foreach ($categoryProducts as $product) {
+
+				$resizedImageUrl = $this->helper('Magento\Catalog\Helper\Image')
+                        ->init($product, $imageId)
+                        ->constrainOnly(true)
+                        ->keepAspectRatio(true)
+                        ->keepTransparency(true)
+                        ->keepFrame(true)
+                        ->resize($width, $height)
+                        ->getUrl();
+
+				?>
+				<li class="item level0-child">
+					<a href="<?php echo $product->getProductUrl(); ?>">
+					<?php if($product->getImage() != ""){
+						$productimage = $resizedImageUrl;
+					 ?>
+					    <img id="myImg" src=" <?php echo $productimage; ?> "/>
+					<?php } else { ?>
+						<img id="myImg" src=" <?php echo $placeholderimg; ?> "/>
+					<?php } ?>
+					    <div class="contain">
+							<span class="product_name"><?php echo $product->getName();?></span>
+							<span class="product_price"><?php echo $abstractProductBlock->getProductPrice($product) ?></span>
+						</div>
+					</a>
+				</li>
+			<?php } ?>
+			</ul>
+		</div>
+			<script>
+				require(['jquery', 'owlcarousel'], function ($) {
+				  $(document).ready( function() {
+				              $('.cat-pro-slider').owlCarousel({
+				                loop: true,
+				                margin: 10,
+				                responsiveClass: true,
+				                responsive: {
+				                  0: {
+				                    items: 1,
+				                    dots: true,
+				                    nav: false
+				                  },
+				                  600: {
+				                    items: 2,
+				                    dots: true,
+				                    nav: false
+				                  },
+				                  1000: {
+				                    items: 4,
+				                    nav: false,
+				                    dots: true,
+				                    loop: false,
+				                    margin: 20
+				                  }
+				                }
+				              });
+				         });
+				});
+          </script>
+          <?php } ?>
+
+
+        <?php if($cmslayoutvalue['type'] =="6"){ ?>	
+		<?php /* Top Seller Category Product Slider */ ?>
+
+		<?php
+		$helper = $this->helper("Dbm\CmsLayouts\Helper\Data");
+		$abstractProductBlock = $block->getLayout()->createBlock('\Magento\Catalog\Block\Product\AbstractProduct');
+		$placeholderimg = $helper->getPlaceholderImage();
+		$cid =$cmslayoutvalue['type6_category1'];
+		$limit =$cmslayoutvalue['type6_limit1'];
+		$categoryProducts = $helper->getProductCollectionFromCategory($cid)->setPageSize($limit);
+		$imageId = 'product_base_image';
+		$width = 290;
+		$height = 357;
+		?>
+		<div class="block_type_<?php echo $cmslayoutvalue['type'];?> product_slider" style="background-color:<?php echo $cmslayoutvalue['type6_button_back_color1']?>;">
+			<h1><?php echo $cmslayoutvalue['type6_title1']; ?></h1>
+			<ul class="owl-carousel owl-theme owl-loaded owl-drag cat-top-pro-slider"> 
+			<?php foreach ($categoryProducts as $product) {
+
+				$resizedImageUrl = $this->helper('Magento\Catalog\Helper\Image')
+                        ->init($product, $imageId)
+                        ->constrainOnly(true)
+                        ->keepAspectRatio(true)
+                        ->keepTransparency(true)
+                        ->keepFrame(true)
+                        ->resize($width, $height)
+                        ->getUrl();
+
+				?>
+				<li class="item level0-child">
+					<a href="<?php echo $product->getProductUrl(); ?>">
+					<?php if($product->getImage() != ""){
+						$productimage = $resizedImageUrl;
+					 ?>
+					    <img id="myImg" src=" <?php echo $productimage; ?> "/>
+					<?php } else { ?>
+						<img id="myImg" src=" <?php echo $placeholderimg; ?> "/>
+					<?php } ?>
+					    <div class="contain">
+							<span class="product_name"><?php echo $product->getName();?></span>
+							<span class="product_price"><?php echo $abstractProductBlock->getProductPrice($product) ?></span>
+						</div>
+					</a>
+				</li>
+			<?php } ?>
+			</ul>
+		</div>
+			<script>
+				require(['jquery', 'owlcarousel'], function ($) {
+				  $(document).ready( function() {
+				              $('.cat-top-pro-slider').owlCarousel({
+				                loop: true,
+				                margin: 10,
+				                responsiveClass: true,
+				                responsive: {
+				                  0: {
+				                    items: 1,
+				                    dots: true,
+				                    nav: false
+				                  },
+				                  600: {
+				                    items: 2,
+				                    dots: true,
+				                    nav: false
+				                  },
+				                  1000: {
+				                    items: 4,
+				                    nav: false,
+				                    dots: true,
+				                    loop: false,
+				                    margin: 20
+				                  }
+				                }
+				              });
+				         });
+				});
+          </script>
+          <?php } ?>
+
+	   <?php endforeach; ?>
+
+	</div>
+
+<?php } else { ?>
+
+<h1>No Block Avelable this home page</h1>
+
+<?php } ?>
